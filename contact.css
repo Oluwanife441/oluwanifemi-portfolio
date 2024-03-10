@@ -1,0 +1,157 @@
+/* @font-face {
+  font-family: "BOLD";
+  src: url(/assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "light";
+  src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "name";
+  src: url(/assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "location";
+  src: url(/assets/fonts/static/Inter-Regular.ttf);
+} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.navigation {
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+.right li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #9333ea;
+  transition: 0.3s;
+}
+
+.right li a:hover {
+  border-top-color: #9333ea;
+  border-bottom-color: #9333ea;
+  color: #f0ead6;
+}
+body {
+  background: linear-gradient(
+    45deg,
+    #edeade,
+    #f9f6ee,
+    #f0ead6,
+    #e9dcc9,
+    #ffdead,
+    #ffe5b4,
+    #f3e5ab,
+    #e2dfd2
+  );
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  margin: 0;
+  font-family: "Poppings", sans-serif;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  10% {
+    background-position: 0 50%;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 293px;
+  border-left: 2px solid #a55ce6;
+  border-top: 2px solid #8136c2;
+  border-right: 2px solid #5b2291;
+  border-bottom: 2px solid #2e0c50;
+  border-radius: 6px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-inline: 20px;
+}
+a {
+  text-decoration: none;
+  color: #a55ce6;
+}
+
+.profile img {
+  border-radius: 50%;
+  padding-inline: 60px;
+  padding-block: 20px;
+  object-fit: cover;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-family: "light";
+  transition: color 1s;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #8136c2;
+}
+.location {
+  color: #9333ea;
+  font-family: "bold";
+  font-size: 13px;
+  margin-top: -11px;
+}
+
+.bio {
+  color: hsl(0, 6%, 21%);
+  font-family: "light";
+  font-size: 14px;
+  padding-top: 10px;
+}
+li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+li ol {
+  /* background: hsl(0, 0%, 20%);
+  padding: 10px;
+  font-family: "Bold";
+  font-size: 13px;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  transition: background 0.5s;
+  cursor: pointer; */
+  font-size: 13px;
+
+  font-weight: 600;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  transition: 0.3s background;
+  cursor: pointer;
+}
+
+li ol:hover {
+  background-color: #9333ea;
+  color: #f0ead6;
+}
+/* loj */
